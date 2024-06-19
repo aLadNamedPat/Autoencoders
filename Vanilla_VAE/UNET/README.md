@@ -1,4 +1,4 @@
-# Autoencoder Trained on UNET
+# Variational Autoencoder Trained on UNET
 
 Instead of a classical encoder-decoder structure, this architecture uses skip connections from previous opposing layers that are oppositely connected and concatenated.
 
@@ -12,3 +12,5 @@ Results were very good for reconstruction.
 ![Results_two](../../results/Vanilla_VAE/UNET_Results/results_two.png)
 
 ![Results_Three](../../results/Vanilla_VAE/UNET_Results/results_three.png)
+
+The UNET was trained for 100 epochs at a learning rate of 5e-4 and a latent dimension of 512. Training was conducted on a Nvidia 3050-Ti.

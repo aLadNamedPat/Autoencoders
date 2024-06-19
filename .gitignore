@@ -3,4 +3,6 @@ Vanilla_VAE/test_normalization.py
 Vanilla_VAE/__pycache__
 Vanilla_VAE/wandb/
 Vanilla_VAE/UNET/__pycache__
+Vanilla_VAE/NoSkipVAE/__pycache__
+Vanilla_VAE/RESNET/__pycache__
 Vanilla_AE/__pycache__

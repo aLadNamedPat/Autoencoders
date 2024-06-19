@@ -63,8 +63,9 @@ color_transform = transforms.Compose([
 
 current_dir = os.path.dirname(os.path.abspath(__file__))
 project_dir = os.path.dirname(current_dir)
-gray_dir = os.path.join(project_dir, "data/gray")
-color_dir = os.path.join(project_dir, "data/color")
+parent_dir = os.path.dirname(project_dir)
+gray_dir = os.path.join(parent_dir, "data/gray")
+color_dir = os.path.join(parent_dir, "data/color")
 
 test_dataset = CustomTestDataset(image_dir=gray_dir, color_dir = color_dir, transform=transform, color_transform = color_transform)
 test_dataloader = DataLoader(test_dataset, batch_size=1, shuffle=False)
